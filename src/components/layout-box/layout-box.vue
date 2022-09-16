@@ -1,12 +1,12 @@
 <template>
-  <div class="ex-card">
-    <div v-if="title" class="ex-card__title">
+  <div class="layout-box">
+    <div v-if="title" class="layout-box__title">
       {{ title }}
     </div>
-    <div v-if="description" class="ex-card__description">
+    <div v-if="description" class="layout-box__description">
       {{ description }}
     </div>
-    <div class="ex-card__body">
+    <div class="layout-box__body">
       <slot></slot>
     </div>
   </div>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'ex-card',
+  name: 'layout-box',
   props: {
     title: {
       type: String,
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.ex-card {
+.layout-box {
   margin-bottom: 32px;
   padding: 24px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);

@@ -1,17 +1,17 @@
 <template>
   <div class="page-home">
-    <ex-card title="基础使用" description="支持配置 api.js 路径和配置项">
+    <layout-box title="基础使用" description="支持配置 api.js 路径和配置项">
       <onlyoffice-editor :src="src" :config="editorConfig1" @ready="onReady1" />
-    </ex-card>
-    <ex-card title="打包后使用" description="异步加载。">
+    </layout-box>
+    <layout-box title="打包后使用" description="异步加载。">
       <lib-onlyoffice-editor :src="src" :config="editorConfig2" @ready="onReady2" />
-    </ex-card>
+    </layout-box>
   </div>
 </template>
 
 <script>
 import merge from 'lodash.merge'
-import { OnlyofficeEditor as LibOnlyofficeEditor } from '../../lib/onlyoffice-editor.umd.min'
+import { OnlyofficeEditor as LibOnlyofficeEditor } from '../../lib/onlyoffice-vue.umd.min'
 
 const editorConfig = {
   document: {

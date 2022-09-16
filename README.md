@@ -8,7 +8,7 @@
 1、安装
 
 ```bash
-pnpm add onlyoffice-vue
+yarn add onlyoffice-vue
 ```
 
 2、使用
